@@ -283,6 +283,8 @@ void init_ws()
 
 void setup() {
   Serial.begin(115200);
+  Serial.println("5 seconds delay");
+  delay(5000); // to make sure thae handshakes happens after the mk312 is running
   pinMode(0, OUTPUT);
   pinMode(2, OUTPUT);
   init_logger();
